@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes do Jogo</title>
+    <link rel="stylesheet" href="css/Ajustes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="container-ajustes">
+
+        <div class="left">
+            <span class="back-to-menu" onclick="window.location.href='Menu.html'">
+                <img src="imagem/de-volta.png" alt="Voltar ao Menu">
+            </span>
+
+            <h2>AJUSTES DO JOGO</h2>
+
+            <div class="input-group">
+                <label for="dificuldade">Dificuldade</label>
+                <select id="dificuldade" name="dificuldade" onchange="ajustarValores()">
+                    <option value="" selected disabled></option>
+                    <option value="facil">Fácil</option>
+                    <option value="normal">Normal</option>
+                    <option value="dificil">Difícil</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="caixa_inicial">Valor do Caixa Inicial (USD$)</label>
+                <input type="text" id="caixa_inicial" name="caixa_inicial" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="assertividade_bot">Assertividade do Bot</label>
+                <input type="text" id="assertividade_bot" name="assertividade_bot" readonly>
+            </div>
+
+            <div class="input-group">
+                <label for="ano_inicio">Ano de Início</label>
+                <select id="ano_inicio" name="ano_inicio" class="year-selector">
+                    <option value="" selected disabled></option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+
+            <div class="button">
+                <input onclick="validarCampos()" type="button" value="COMEÇAR INVESTIMENTO">
+            </div>            
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="right">
+            <span class="sair">
+                <img src="imagem/fechar.png" alt="Sair">
+            </span>
+
+            <h2>EXPLICAÇÃO DOS CAMPOS</h2>
+
+            <div class="field-group">
+                <div class="icon">🎯</div>
+                <div class="field-content">
+                    <strong>Dificuldade:</strong>
+                    <p>Dificuldade na qual vai definir a configuração do jogo:</p>
+                    <ul>
+                        <li>Fácil</li>
+                        <li>Normal</li>
+                        <li>Difícil</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="icon">💰</div>
+                <div class="field-content">
+                    <strong>Valor do caixa Inicial:</strong>
+                    <p>Este campo define qual seu patrimônio inicial para investir:</p>
+                    <ul>
+                        <li>Fácil - USD$100000</li>
+                        <li>Normal - USD$50000</li>
+                        <li>Difícil - USD$10000</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="icon">🤖</div>
+                <div class="field-content">
+                    <strong>Assertividade do Bot:</strong>
+                    <p>Este campo define qual a porcentagem de acerto das decisões do bot:</p>
+                    <ul>
+                        <li>Fácil - 30%</li>
+                        <li>Normal - 50%</li>
+                        <li>Difícil - 90%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="icon">📅</div>
+                <div class="field-content">
+                    <strong>Ano de Início:</strong>
+                    <p>Define o ano em que o jogo começará (2020, 2021, 2022, 2023 ou 2024).</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/Ajustes.js" defer></script>
+</body>
+</html>

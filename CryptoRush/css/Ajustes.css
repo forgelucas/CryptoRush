@@ -1,0 +1,164 @@
+/* --------AJUSTES--------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.container-ajustes {
+    position: relative;
+    width: 80%;
+    height: 94vh;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #373059;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.left {
+    width: 35%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: relative; 
+    /* border-right: 1px solid #fff; */
+}
+
+.right {
+    width: 65%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.divider {
+    width: 1px;
+    background-color: #fff;
+    height: 100%;
+    position: sticky; 
+    top: 0; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+label {
+    color: #fff;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+.button input {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #14a514;
+    color: white;
+    border-radius: 5px;
+}
+.button input:hover {
+    background-color: #018d28;
+}
+
+.back-to-menu {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.back-to-menu img {
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+}
+
+.sair {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.sair img {
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+}
+
+.field-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid #e0e0e04e;
+    padding-bottom: 15px;
+}
+
+.icon {
+    font-size: 26px;
+}
+
+.field-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #c6c6c6;
+    font-size: 15px;
+}
+
+.field-content strong {
+    font-size: 18px;
+    color: #f1f1f1;
+}
+.field-content p {
+    margin: 0;
+    color: #c6c6c6;
+    font-size: 16px;
+}
+
+#carregamento h1 {
+    font-size: 24px;
+    animation: pisca 1s infinite;
+    text-align: center;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+

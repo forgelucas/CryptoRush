@@ -1,0 +1,219 @@
+/* --------DASHBOARD--------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.container-dashboard {
+    /* position: relative; */
+    width: 80%;
+    height: 94vh;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #373059;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+h3{
+    color: #fff;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.dash {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+#performanceChart {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.buttons-dash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.advance-date {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #14a514; 
+    color: white;
+    text-align: center;
+}
+
+.btn-crypto {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #14a514; 
+    color: white;
+    text-align: center;
+}
+
+.advance-date:hover, .btn-crypto:hover{
+    background-color: #018d28;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider-header {
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    position: sticky; 
+    margin-top: 8px; 
+    margin-bottom: 5px; 
+}
+
+.divider-dash {
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    position: sticky; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+}
+
+.status span {
+    margin: 0 20px;
+    color: #fff;
+}
+
+.left-panel {
+    height: 89vh;
+    width: 69%;
+    float: left;
+    text-align: center;
+    border-right: 2px solid #ccc;
+    padding-right: 5px;
+}
+
+.right-panel {
+    width: 30%;
+    float: right;
+    text-align: center;
+}
+
+/* #history {
+    background-color: #373059;
+    border: 1px solid #ccc; --> MANTER COMENTADO
+    padding: 10px;
+    margin-top: 5px;
+    height: 460px;
+    overflow-y: auto;
+    border-radius: 10px;
+} */
+
+#history {
+    max-height: 300px;  /* Define uma altura máxima */
+    overflow-y: auto;   /* Adiciona a rolagem vertical */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    color: white;
+}
+
+.inputs {
+    color: #fff;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.input-group label {
+    width: 120px;
+    text-align: left; 
+}
+
+.inputs input,
+.inputs select {
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons-compra-venda {
+    display: flex;
+    gap: 10px;
+}
+
+.verde {
+    background-color: #14a514;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.verde:hover {
+    background-color: #018d28;
+}
+
+.vermelho {
+    background-color: #e60000;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.vermelho:hover {
+    background-color: #c72121;
+}
+ 
+.btn-carteira{
+    border-radius: 5px;    
+}
+
+.btn-carteira:hover{
+    background-color: #ccc;
+}
+
+.back-to-menu {
+    position:relative;
+    top: 3px;
+    left: 3px;
+}
+
+.back-to-menu img {
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+}
